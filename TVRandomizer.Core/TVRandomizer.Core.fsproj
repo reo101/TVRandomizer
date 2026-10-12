@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="8.0.403" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Protocol.fs" />
+    <Compile Include="TransportAuthority.fs" />
+    <Compile Include="Playlist.fs" />
+    <Compile Include="HostPlaylist.fs" />
+  </ItemGroup>
+</Project>

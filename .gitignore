@@ -71,3 +71,11 @@ crashlytics-build.properties
 # Things
 /TVRandomizer/bin
 /TVRandomizer/obj
+**/bin/
+**/obj/
+
+# Nix
+result
+result-*
+/.direnv/
+

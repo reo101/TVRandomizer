@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DisableImplicitFSharpCoreReference>true</DisableImplicitFSharpCoreReference>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" Version="8.0.403" />
+    <ProjectReference Include="../TVRandomizer.Core/TVRandomizer.Core.fsproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FakeClrContracts.fs" />
+    <Compile Include="../TVRandomizer/Playback.fs" Link="Playback.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+</Project>
